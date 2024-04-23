@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script type="text/Javascript" src="index.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="NavBar" id="Nav">
+            <a class="MenuOpenButton" id="MenuOpenButton" onclick={NavOpen()}>&#8801;</a>
+            <a class="MenuCloseButton" id="MenuCloseButton" onClick={NavClose()}>&#x2715;</a>
+            <a href="#Education" id="NavEOne">&#128218;</a>
+            <a href="#Projects" id="NavETwo">&#128230;</a>
+            <a href="#Contact" id="NavEThree">&#128236;</a>
+        </div>
+    </nav>
+    <div class="Container">
+        <section class="Greeting">
+            <h1>Hello!</h1>
+            <div class="GreetingDiv">
+                <p>My name is Kolton, I'm a Software Engineer from Ohio. Welcome to my portfolio page! Take a look around and if you like what you see, let's connect &#128512;</p>
+            </div>
+        </section>
+        <section class="Education" id="Education">
+            <h1>&#128218; Education &#128218;</h1>
+            <div class="EducationFrame">
+                <div class="EducationColumns">
+                    <h4>School</h4>
+                    <ul>
+                        <li>CS Degree</li>
+                        <li>Certificate</li>
+                    </ul>
+                </div>
+                <div class="EducationColumns">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="EducationColumns">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Atom</li>
+                        <li>Clion</li>
+                        <li>Xcode</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="Projects" id="Projects">
+            <h1>&#128230; Projects &#128230;</h1>
+            <div class="ProjectsContainer">
+                <div class="ProjectProfile">
+                    <img src="images/GitHub.png" onclick="GitHub()"/>
+                </div>
+                <div class="ProjectInfo">
+                    <p>I've worked on a diverse array of projects, spanning from software for embedded systems to crafting intricate OpenGL graphics engines, 
+                        Python-based text adventure games, and conducting UI/User research. Additionally, I've created various web applications and sites. 
+                        For more details, take a peek at my GitHub account &#128521;
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="Contact" id="Contact">
+            <div class="ContactDiv">
+                <h1>&#128236; Let's Connect &#128236;</h1>
+                <div class="ContactContainer">
+                    <form action="https://formspree.io/f/xqkrezdd" method="POST">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" 
+                        placeholder="example@email.com"
+                        minlength="2" maxlength="50"
+                        required><br>
+
+                        <label for="message">Messages</label><br>
+                        <textarea name="message" 
+                        placeholder="Your message here."
+                        minlength="5" maxlength="250" 
+                        required></textarea><br>
+                        <input type="text" name="_gotcha" style="display:none;">
+                        <input class="SubmitButton" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
